@@ -6,6 +6,8 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+body {
+}
 
 /*Header styles*/
 header {
@@ -15,11 +17,13 @@ header {
     align-items: center;
     height: 150px;
     justify-content: space-around;
-    border:1px solid red;
-    background-color: var(--chinese-white);
+    border-bottom: 1px solid var(--chinese-white);
+    width: 80%;
+    margin: 0 auto;
+
 }
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     color: var(--chinese-black);
 }
@@ -41,16 +45,66 @@ header form label {
 /*Nav styles*/
 nav ul {
     display: flex;
+    align-items: center;
 }
 nav ul li {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-right: 50px;
 }
 nav ul li:last-child {
     margin-right: 0;
 }
+.programs-dropdown button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+    background-color: var(--chinese-black);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+
+}
 nav ul a {
     text-decoration: none;
     color: var(--chinese-black)
 }
+/*Programs dropdown menu stlyes*/
+.programs-dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: calc(100% + .5rem);
+    background-color: var(--chinese-white);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 400ms, transform 400ms;
+}
+.programs-dropdown.active > button + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+.dropdown-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dropdown-menu ul li {
+    margin-bottom: 15px;
+}
+.dropdown-menu ul li a {
+    font-size: 1rem;
+}
+/*end of programs dropdown menu styles*/
 /*End of Nav styles*/

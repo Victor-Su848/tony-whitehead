@@ -13,25 +13,37 @@
     <title>CEHC</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <header>
       <div class="header-row">
-          <h1>CULTURAL ECOLOGY OF HEALTH AND CHANGE</h1>
-          <form action="">
-            <label for="search">Search</label>
-            <input type="search" id="search">
-          </form>
+        <h1>CULTURAL ECOLOGY OF HEALTH AND CHANGE</h1>
       </div>
       <nav>
         <ul>
+          <li><a href="">Home</a></li>
           <li><a href="">People</a></li>
           <li><a href="">Products</a></li>
-          <li><a href="">Programs</a></li>
+          <li>
+            <div class="programs-dropdown" data-dropdown>
+              <button data-dropdown-button>Programs</button>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="">Public Forums and Conferences</a></li>
+                  <li><a href="">Coding Culture Project</a></li>
+                  <li><a href="">CUSAG Training Mechanisms</a></li>
+                  <li><a href="">Network of Cultural, Ethnographic, and Community Action Scientists (NCECAS)</a></li>
+                  <li><a href="">Antropology of the Black World</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
           <li><a href="">Archives</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Gallery</a></li>
-          <li><a href="">Get Involved</a></li>
+          <li class="get-involved"><a href="">Get Involved</a></li>
+          <li><a href="">Search</a></li>
         </ul>
       </nav>
     </header>
