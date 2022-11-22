@@ -6,8 +6,6 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-body {
-}
 
 /*Header styles*/
 header {
@@ -20,12 +18,12 @@ header {
     border-bottom: 1px solid var(--chinese-white);
     width: 80%;
     margin: 0 auto;
-
 }
 header h1 {
     font-size: 2rem;
     letter-spacing: 2px;
     color: var(--chinese-black);
+    padding-top: 25px;
 }
 .header-row {
     display: flex;
@@ -41,10 +39,13 @@ header form label {
     position: absolute;
     left: 5px;
 }
-/*End of Header styles*/
+/*Checkbox stlyes*/
+
+/*End of checkbox styles*/
 /*Nav styles*/
 nav ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 nav ul li {
@@ -108,3 +109,29 @@ nav ul a {
 }
 /*end of programs dropdown menu styles*/
 /*End of Nav styles*/
+/*End of Header styles*/
+
+/*Vertical navigation bar*/
+@media (1250px >= width) {
+    #menu-checkbox, .menu-checkbox {
+        display: fixed;
+    }
+    
+    nav {
+        position: relative;
+        height: 100vh;
+        border:1px solid blue;
+    }
+    
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        background-color: var(--chinese-white);
+        height: 100vh;
+        width: 250px;
+        box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .5);
+        display: none;
+    }
+}
