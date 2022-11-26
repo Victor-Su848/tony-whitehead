@@ -19,3 +19,11 @@ document.addEventListener("click", function (e) {
     dropDown.classList.remove("active");
   }
 });
+
+//
+const nav = document.querySelector("#nav");
+const navToggleBtn = document.querySelector("#nav-toggle");
+navToggleBtn.addEventListener("click", () => {
+  console.log("navToggleBtn clicked");
+  nav.classList.toggle("visible");
+});
