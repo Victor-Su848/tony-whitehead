@@ -193,6 +193,11 @@ nav ul a {
 main {
   width: 80%;
   margin: 50px 0;
+}
+main h1 {
+  font-size: 1.5rem;
+}
+.index-main {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
@@ -200,7 +205,6 @@ main {
   grid-row-gap: 15px;
 }
 .recent {
-  
 }
 .text span {
   margin-left: 30px;
@@ -273,4 +277,16 @@ main {
     width: 100%;
     line-height: 1.5rem;
   }
+  /*Start of main styles*/
+  .index-main {
+    width: 80%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .text span {
+    margin-left: 30px;
+    display: inline-block;
+  }
+  /*End of main styles*/
 }
