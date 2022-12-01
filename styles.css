@@ -5,8 +5,16 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  line-height: 1.25rem;
 }
-
+/*Body styles*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/*End of body styles*/
 /*Header styles*/
 header {
   position: relative;
@@ -74,6 +82,9 @@ nav ul li:last-child {
 nav ul a {
   text-decoration: none;
   color: var(--chinese-black);
+}
+.current-tab {
+  text-decoration: underline;
 }
 /*Programs dropdown menu stlyes*/
 .programs-dropdown {
@@ -178,6 +189,24 @@ nav ul a {
   top: calc(100% - 8px);
 }
 /*End of hamburger icon styles*/
+/*Start of main styles*/
+main {
+  width: 80%;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+.recent {
+  
+}
+.text span {
+  margin-left: 30px;
+  display: inline-block;
+}
+/*End of main styles*/
 
 /*Vertical navigation bar*/
 @media only screen and (max-width: 1250px) {
@@ -209,7 +238,7 @@ nav ul a {
     height: 100vh;
     width: 250px;
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.5);
-    transition: left .5s;
+    transition: left 0.5s;
     left: -250px;
   }
   .nav-link {
@@ -227,7 +256,7 @@ nav ul a {
   }
 
   .dropdown-menu {
-   width: 100px
+    width: 100px;
   }
   .dropdown-menu ul {
     height: 300px;
@@ -245,5 +274,3 @@ nav ul a {
     line-height: 1.5rem;
   }
 }
-
-
