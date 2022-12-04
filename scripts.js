@@ -28,7 +28,7 @@ navToggleBtn.addEventListener("click", () => {
   nav.classList.toggle("visible");
 });
 
-
+// enables smooth scrolling when moving to links on web page
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
