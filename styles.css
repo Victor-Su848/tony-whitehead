@@ -211,6 +211,23 @@ main h1 {
   display: inline-block;
 }
 /*End of main styles*/
+/*Start of products's main styles*/
+.products-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products-main h3, .products-main h2 {
+  font-size: 1.5rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+/*End of products's main styles*/
 
 /*Vertical navigation bar*/
 @media only screen and (max-width: 1250px) {

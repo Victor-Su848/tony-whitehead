@@ -27,3 +27,14 @@ navToggleBtn.addEventListener("click", () => {
   console.log("navToggleBtn clicked");
   nav.classList.toggle("visible");
 });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
